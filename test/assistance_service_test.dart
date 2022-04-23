@@ -14,7 +14,7 @@ import 'assistance_service_test.mocks.dart';
 
 @GenerateMocks([AssistanceProviderInterface])
 void main() {
-  late AssistanceService service;
+  late AssistanceServiceInterface service;
   late MockAssistanceProviderInterface provider;
 
   setUp(() async {

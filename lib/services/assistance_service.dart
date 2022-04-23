@@ -30,7 +30,8 @@ class AssistanceService extends GetxService
   }
 
   @override
-  Future<AssistanceService> init(AssistanceProviderInterface provider) async {
+  Future<AssistanceServiceInterface> init(
+      AssistanceProviderInterface provider) async {
     _assistanceProvider = provider;
     return this;
   }

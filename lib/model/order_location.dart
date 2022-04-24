@@ -5,6 +5,7 @@ class OrderLocation {
   double latitude;
   double longitude;
   DateTime dateTime;
+
   OrderLocation({
     required this.latitude,
     required this.longitude,
@@ -27,7 +28,7 @@ class OrderLocation {
     return <String, dynamic>{
       'latitude': latitude,
       'longitude': longitude,
-      'dateTime': dateTime.millisecondsSinceEpoch,
+      'dateTime': dateTime.toIso8601String(),
     };
   }
 
@@ -35,7 +36,7 @@ class OrderLocation {
     return OrderLocation(
       latitude: map['latitude'] as double,
       longitude: map['longitude'] as double,
-      dateTime: DateTime.fromMillisecondsSinceEpoch(map['dateTime'] as int),
+      dateTime: DateTime.parse(map['dateTime']),
     );
   }
 

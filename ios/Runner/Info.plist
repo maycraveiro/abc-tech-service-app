@@ -43,5 +43,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>Precisa da geolocalização para abertura das ordens de serviço.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Precisa da geolocalização para abertura das ordens de serviço.</string>
 </dict>
 </plist>
